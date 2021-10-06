@@ -1,0 +1,140 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          description: "dockerhub"
+          id: "dockerhub"
+          password: "{AQAAABAAAAAQ4q/WaU6HMyqgxJMCaAF1695Xps5tz9jkvGALGoKlrdw=}"
+          scope: GLOBAL
+          username: "eaob"
+      - basicSSHUserPrivateKey:
+          description: "github"
+          id: "github"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "root"
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  labelAtoms:
+  - name: "docker"
+  - name: "master"
+  labelString: "docker"
+  markupFormatter: "plainText"
+  mode: EXCLUSIVE
+  myViewsTabBar: "standard"
+  numExecutors: 2
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "evgene"
+        properties:
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - mailer:
+            emailAddress: "evgene@gmail.com"
+        - "apiToken"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  sSHD:
+    port: -1
+  scriptApproval:
+    approvedSignatures:
+    - "method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object"
+unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://localhost:8080/github-webhook/"
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "адрес еще не настроен <nobody@nowhere>"
+    url: "http://localhost:8080/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  pollSCM:
+    pollingThreadCount: 10
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
+
