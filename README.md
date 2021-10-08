@@ -1,8 +1,14 @@
 
-#### JCasC
+### JCasC
 
-git clone
-docker-compose up --build -d
+ Запустить:
+ 
+`git clone`
+`cd jcasc`
+`docker-compose up --build -d`
+
+Jenkins web - http://$HOST_IP
+
 
 
 
