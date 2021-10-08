@@ -1,0 +1,56 @@
+jenkins:
+  systemMessage: "\n\nHello from eaob!\n\n"
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  labelAtoms:
+  - name: "master"
+  labelString: "docker"
+  markupFormatter: "plainText"
+  mode: EXCLUSIVE
+  myViewsTabBar: "standard"
+  numExecutors: 2
+  projectNamingStrategy: "standard"
+  quietPeriod: 0
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 2
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+       - id: admin
+         password: ${adm_pass}
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: true
+
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+        - usernamePassword:
+            scope:    GLOBAL
+            id:       dockerhub
+            username: eaob
+            password: ${dockerhub}
+            description: dockerhub username/password
+        - basicSSHUserPrivateKey:
+            description: github
+            id: github
+            privateKeySource:
+              directEntry:
+                privateKey: ${github}
+            scope: GLOBAL
+            username: root
+            description: github ssh key  
+
+jobs:
+  - file: /var/jenkins_conf/docker_image_build.groovy 

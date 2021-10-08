@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  jenkins:
+    privileged: true 
+    build: 
+      context: ./master
+    ports: 
+      - 80:8080
+      - 50000:50000
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ./casc_configs:/var/jenkins_conf
+    secrets:
+      - adm_pass
+      - dockerhub
+      - github
+    environment:
+      - CASC_JENKINS_CONFIG=/var/jenkins_conf
+
+secrets: 
+  adm_pass:
+    file: /home/centos/hometasks/jenkins_as_code/secrets/admin
+  dockerhub:
+    file: /home/centos/hometasks/jenkins_as_code/secrets/dockerhub
+  github:
+    file: /home/centos/hometasks/jenkins_as_code/secrets/github
+volumes:
+  jenkins_home:
