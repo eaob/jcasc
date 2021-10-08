@@ -10,6 +10,8 @@
 
 Jenkins web - http://$HOST_IP
 
+Импортировать конфигурацию /var/jenkins_conf/jenkins.yaml
+
 
 
 
